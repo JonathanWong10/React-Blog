@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 const blog_routes = require('./routes/blog');
+const authentication_routes = require('./routes/authentication');
 
 app.use('/', blog_routes);
 
