@@ -11,6 +11,7 @@ const blog_routes = require('./routes/blog');
 const authentication_routes = require('./routes/authentication');
 
 app.use('/', blog_routes);
+app.use('/authentication', authentication_routes);
 
 mongoose.connect(process.env.DB_URI);
 
